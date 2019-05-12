@@ -1,0 +1,82 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;	
+	/*margin: 0;+*/
+}
+
+h1 {
+	text-align: center;
+}
+
+.chickenCard, .beefCard, .sushiCard {
+	border: 1px solid black;
+	position: relative;
+	top: 40px;
+	background-color: lightgray;
+}
+
+.chicken, .beef, .sushi { 
+	position: relative;
+	float: right;
+	width: 120px;
+	text-align: center;
+	background-color: pink;
+	border: 1px solid black;
+	font-weight: bold;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+
+.beef {
+	background-color: red;
+	color: white;
+}
+
+.sushi {
+	background-color: yellow;
+	color: black;
+}
+
+.chickenDesc, .beefDesc, .sushiDesc {
+	margin: 10px;
+	font-size: 17.5px;
+	clear: right;
+}
+
+@media (min-width: 992px) {
+	.chickenCard, .beefCard, .sushiCard {
+		width: 31%;
+		float: left;
+		margin: 10px 10px 10px 10px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.chickenCard, .beefCard {
+		width: 46%;
+		float: left;
+		overflow: auto;
+	}
+
+	.chickenCard {
+		margin: 10px 10px 20px 20px;
+	}
+
+	.beefCard {
+		margin: 10px 10px 20px 10px;
+	}
+
+	.sushiCard {
+		width: 94%;
+		margin: 0px 20px;
+		float: left;
+	}
+}
+
+@media (max-width: 767px) {
+	.chickenCard, .beefCard, .sushiCard {
+		width: 94%;
+		float: left;
+		margin: 10px 10px 10px 15px;
+	}
+}
